@@ -18,7 +18,7 @@ const getScrollAmount = () => {
 nextBtn.addEventListener("click", () => {
     gsap.to(scrollContainer, {
         scrollLeft: `+=${getScrollAmount()}`,
-        duration: 1,
+        duration: 0.5,
         ease: "power2.inOut"
     });
 });
@@ -26,7 +26,7 @@ nextBtn.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
     gsap.to(scrollContainer, {
         scrollLeft: `-=${getScrollAmount()}`,
-        duration: 1,
+        duration: 0.5,
         ease: "power2.inOut"
     });
 });
